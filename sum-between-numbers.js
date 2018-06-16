@@ -36,7 +36,11 @@ function sumBetweenNumbers (a,b) {
 
 		var sum = 0;
 		if (a == b) {
-			sum = a;
+			if ((isInt(a)) && a>=1) {
+				sum = a;
+			} else {
+				sum = 0;
+			}
 		} else {
 
 			for (var i = Min (a,b); i <= Max (a,b); i++) {
